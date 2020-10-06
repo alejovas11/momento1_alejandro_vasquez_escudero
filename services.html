@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momento 1</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    .resultados {
+      width: 250px;
+      float: left;
+      margin: 20px;
+      border: 1px;
+      border-color: black;
+    }
+  </style>
+  <script>
+    var acum = 0;
+    var sum = 0;
+    var prom = 0;
+  </script>
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand">
+      <h2>Empirers Software</h2>
+    </a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html">Company</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./login.html">Logout</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div id="formulario">
+      <h2>Crea Nuevo Servicio</h2>
+
+      <form>
+        <label>Tipo de Servicio: </label>
+        <input type="text" class=form-control id=sevice name=service>
+        <label>Descripcion: </label>
+        <input type="text" class=form-control id=cant name=cant>
+        <label>Valor: </label>
+        <input type="number" class="form-control" id="value" name="value">
+        <br>
+        <button type="button" class="btn btn-primary" id="save" name="save" onclick="prosesar()">GRABAR</button>
+
+
+      </form>
+
+    </div>
+    <div id="resultados">
+      <h3>Informacion del servicio</h3>
+      <hr>
+      <p id="p_cant_ser">
+        Cantidad de servicios: <span></span>
+      </p>
+      <p id="p_suma_ser">
+        Sumatoria de servicios: <span></span>
+      </p>
+      <p id="p_prom_ser">
+        Promedio de los servicios: <span></span>
+      </p>
+    </div>
+
+    <script src="process.js"></script>
+</body>
+<footer>
+  <br>
+  <div id="footer" style="text-align: center; background-color: aquamarine;">
+    &copy; Alejandro Vasquez Escudero 2020 CESDE Tel. 3127702357
+
+  </div>
+</footer>
+
+</html>
